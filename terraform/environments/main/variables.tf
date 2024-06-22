@@ -15,6 +15,7 @@
 variable "project_id" {
   type        = string
   description = "Google Cloud project ID to deploy resources to."
+  default = "fire-beer-olympics"
 }
 
 variable "run_service_name" {
@@ -25,5 +26,6 @@ variable "run_service_name" {
 
 variable "github_repository_url" {
   type        = string
-  description = "URL of connected GitHub repository (https://github.com/repo_owner/repo_name)"
+  description = "Github repo URL"
+  default = "https://github.com/rosster44/beer-olympics-app.git"
 }
